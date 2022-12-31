@@ -32,7 +32,7 @@
         let characters = textArea.value;
         charactersCount.textContent = characters.replace(/\s/g, "").length;
         let words = textArea.value.split(" ").filter((item) => {
-          return item != " ";
+          return item != "";
         });
         wordsCount.textContent = words.length;
       };
