@@ -30,7 +30,7 @@
 
       textArea.oninput = () => {
         let characters = textArea.value;
-        charactersCount.textContent = characters.length;
+        charactersCount.textContent = characters.replace(/\s/g, "").length;
         let words = textArea.value.split(" ").filter((item) => {
           return item != " ";
         });
